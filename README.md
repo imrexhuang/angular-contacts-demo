@@ -11,3 +11,8 @@
 
 ## 升級到Angular 7
 - npm install -g @angular/cli@latest
+- npm install @angular/cli@latest
+- ng update @angular/cli
+- ng update @angular/core --force
+- npm start
+
