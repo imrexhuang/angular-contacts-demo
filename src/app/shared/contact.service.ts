@@ -7,8 +7,8 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
 
+//const CONTACT_URL = 'http://www.json-generator.com/api/json/get/cegDkwPfDm?indent=2';
 const CONTACT_URL = '/assets/contacts.json';
-
 let _contacts;
 
 @Injectable()
