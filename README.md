@@ -7,3 +7,7 @@
 - 浏览器打开 http://localhost:4200 即可访问
 
 > 服务端渲染版本请运行 `git checkout ssr` 切换至 `ssr` 分支
+
+
+## 升級到Angular 7
+- npm install -g @angular/cli@latest
