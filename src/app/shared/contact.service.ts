@@ -6,17 +6,18 @@ import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
+import { Contact } from './contact';
 
 //const CONTACT_URL = 'http://www.json-generator.com/api/json/get/cegDkwPfDm?indent=2';
 const CONTACT_URL = '/assets/contacts.json';
-let _contacts;
+let _contacts: any;
 
 @Injectable()
 export class ContactService {
   constructor(private http: HttpClient) {}
 
   getContactsData(opts?: any) {
-    let source;
+    let source: any;
     if (Array.isArray(_contacts)) {
       source = Observable.of(_contacts);
     } else {
