@@ -9,6 +9,7 @@ import { ContactService } from '../shared/contact.service';
 })
 export class ListComponent implements OnInit {
   contacts: {};
+  errorMessage: {};
   private isAdd = 1;
 
   constructor(
@@ -23,7 +24,8 @@ export class ListComponent implements OnInit {
   getContacts() {
     this._contactService.getContactsData().subscribe(data => {
       this.contacts = data;
-    });
+    },
+    error =>  this.errorMessage = <any>error);
   }
 
   addContact() {
